@@ -7,7 +7,7 @@ on:
 
 jobs:
 
-  deploy:
+  deploy-gh-pages:
 
     runs-on: ubuntu-latest
 
@@ -19,13 +19,13 @@ jobs:
       - name: Optimize map
         uses: thecodingmachine/map-optimizer-action@master
 
-      - name: Bash
+      - name: Commit
         run: |
           ls -al
-          git config --global user.email "d.negrier@thecodingmachine.com"
-          git config --global user.name "David Négrier"
+          git config --global user.email "gh-actions@pablo.tools"
+          git config --global user.name "gh-actions"
           git checkout master
-          git commit -am "Adding files"
+          git commit -am "optimized maps"
 
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@releases/v3
@@ -35,6 +35,6 @@ jobs:
           FOLDER: . # The folder the action should deploy.
           BASE_BRANCH: master
 
-      - name: Bash2
+      - name: List Files
         run: |
           ls -al
