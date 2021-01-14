@@ -1,3 +1,6 @@
+
+[Play!](https://play.lounge.rocks/_/global/raw.githubusercontent.com/pinpox/lounge-rocks-adventure-map/master/main.json)
+
 # WorkAdventure Map Starter Kit
 
 This is a starter kit to help you build your own map for [WorkAdventure](https://workadventu.re).
