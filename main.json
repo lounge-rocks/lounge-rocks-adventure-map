@@ -238,7 +238,7 @@
                  "value":"smoking_area"
                 }],
          "type":"tilelayer",
-         "visible":true,
+         "visible":false,
          "width":120,
          "x":0,
          "y":0
@@ -256,7 +256,7 @@
                  "value":"living_room"
                 }],
          "type":"tilelayer",
-         "visible":true,
+         "visible":false,
          "width":120,
          "x":0,
          "y":0
@@ -274,7 +274,7 @@
                  "value":"sauna"
                 }],
          "type":"tilelayer",
-         "visible":true,
+         "visible":false,
          "width":120,
          "x":0,
          "y":0
@@ -292,7 +292,7 @@
                  "value":"https:\/\/codimd.ingolf-wagner.de\/party_guestbook?view"
                 }],
          "type":"tilelayer",
-         "visible":true,
+         "visible":false,
          "width":120,
          "x":0,
          "y":0
@@ -310,7 +310,7 @@
                  "value":true
                 }],
          "type":"tilelayer",
-         "visible":true,
+         "visible":false,
          "width":120,
          "x":0,
          "y":0
@@ -328,7 +328,7 @@
                  "value":"mp3\/groovesalad256.pls"
                 }],
          "type":"tilelayer",
-         "visible":true,
+         "visible":false,
          "width":120,
          "x":0,
          "y":0
@@ -347,7 +347,7 @@
                 }],
          "tintcolor":"#ff0206",
          "type":"tilelayer",
-         "visible":true,
+         "visible":false,
          "width":120,
          "x":0,
          "y":0
@@ -359,7 +359,7 @@
          "name":"collide_layer",
          "opacity":0.84,
          "type":"tilelayer",
-         "visible":true,
+         "visible":false,
          "width":120,
          "x":0,
          "y":0
