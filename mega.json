@@ -49,7 +49,7 @@
                 {
                  "name":"exitUrl",
                  "type":"string",
-                 "value":"small.json#start"
+                 "value":"main.json#start_outside_mega"
                 }],
          "type":"tilelayer",
          "visible":true,
