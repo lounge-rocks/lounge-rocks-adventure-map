@@ -825,7 +825,7 @@
  "nextobjectid":1,
  "orientation":"orthogonal",
  "renderorder":"right-down",
- "tiledversion":"1.4.3",
+ "tiledversion":"1.7.2",
  "tileheight":32,
  "tilesets":[
         {
@@ -840,15 +840,6 @@
          "tilecount":9,
          "tileheight":32,
          "tiles":[
-                {
-                 "id":0,
-                 "properties":[
-                        {
-                         "name":"exitUrl",
-                         "type":"string",
-                         "value":"foo.json#bar"
-                        }]
-                }, 
                 {
                  "id":1,
                  "properties":[
@@ -909,171 +900,179 @@
          "margin":0,
          "name":"forest_tiles",
          "spacing":0,
-         "terrains":[
-                {
-                 "name":"Forrest water",
-                 "tile":16
-                }],
          "tilecount":256,
          "tileheight":32,
-         "tiles":[
+         "tilewidth":32,
+         "wangsets":[
                 {
-                 "id":73,
-                 "terrain":[-1, 0, -1, 0]
-                }, 
-                {
-                 "id":116,
-                 "terrain":[-1, -1, -1, 0]
-                }, 
-                {
-                 "id":117,
-                 "terrain":[-1, -1, 0, 0]
-                }, 
-                {
-                 "id":118,
-                 "terrain":[-1, -1, 0, -1]
-                }, 
-                {
-                 "id":119,
-                 "terrain":[-1, -1, -1, 0]
-                }, 
-                {
-                 "id":120,
-                 "terrain":[-1, -1, 0, 0]
-                }, 
-                {
-                 "id":121,
-                 "terrain":[-1, -1, 0, -1]
-                }, 
-                {
-                 "id":132,
-                 "terrain":[-1, 0, -1, 0]
-                }, 
-                {
-                 "id":133,
-                 "terrain":[0, 0, 0, 0]
-                }, 
-                {
-                 "id":134,
-                 "terrain":[0, -1, 0, -1]
-                }, 
-                {
-                 "id":135,
-                 "terrain":[-1, 0, -1, 0]
-                }, 
-                {
-                 "id":136,
-                 "terrain":[0, 0, 0, 0]
-                }, 
-                {
-                 "id":137,
-                 "terrain":[0, -1, 0, -1]
-                }, 
-                {
-                 "id":138,
-                 "terrain":[-1, -1, -1, 0]
-                }, 
-                {
-                 "id":139,
-                 "terrain":[-1, -1, 0, 0]
-                }, 
-                {
-                 "id":140,
-                 "terrain":[-1, -1, 0, -1]
-                }, 
-                {
-                 "id":149,
-                 "terrain":[0, 0, -1, -1]
-                }, 
-                {
-                 "id":151,
-                 "terrain":[-1, 0, -1, -1]
-                }, 
-                {
-                 "id":152,
-                 "terrain":[0, 0, -1, -1]
-                }, 
-                {
-                 "id":153,
-                 "terrain":[0, -1, -1, -1]
-                }, 
-                {
-                 "id":154,
-                 "terrain":[-1, 0, -1, 0]
-                }, 
-                {
-                 "id":155,
-                 "terrain":[0, 0, 0, 0]
-                }, 
-                {
-                 "id":156,
-                 "terrain":[0, -1, 0, -1]
-                }, 
-                {
-                 "id":164,
-                 "terrain":[-1, 0, 0, 0]
-                }, 
-                {
-                 "id":165,
-                 "terrain":[0, -1, 0, 0]
-                }, 
-                {
-                 "id":166,
-                 "terrain":[-1, 0, 0, 0]
-                }, 
-                {
-                 "id":167,
-                 "terrain":[0, -1, 0, 0]
-                }, 
-                {
-                 "id":168,
-                 "terrain":[-1, 0, 0, 0]
-                }, 
-                {
-                 "id":169,
-                 "terrain":[0, -1, 0, 0]
-                }, 
-                {
-                 "id":170,
-                 "terrain":[-1, 0, -1, -1]
-                }, 
-                {
-                 "id":171,
-                 "terrain":[0, 0, -1, -1]
-                }, 
-                {
-                 "id":172,
-                 "terrain":[0, -1, -1, -1]
-                }, 
-                {
-                 "id":180,
-                 "terrain":[0, 0, -1, 0]
-                }, 
-                {
-                 "id":181,
-                 "terrain":[0, 0, 0, -1]
-                }, 
-                {
-                 "id":182,
-                 "terrain":[0, 0, -1, 0]
-                }, 
-                {
-                 "id":183,
-                 "terrain":[0, 0, 0, -1]
-                }, 
-                {
-                 "id":184,
-                 "terrain":[0, 0, -1, 0]
-                }, 
-                {
-                 "id":185,
-                 "terrain":[0, 0, 0, -1]
-                }, 
-                {
-                 "id":196,
-                 "terrain":[0, 0, 0, 0]
-                }],
-         "tilewidth":32
+                 "colors":[
+                        {
+                         "color":"#ff0000",
+                         "name":"Forrest water",
+                         "probability":1,
+                         "tile":16
+                        }],
+                 "name":"Terrains",
+                 "tile":-1,
+                 "type":"corner",
+                 "wangtiles":[
+                        {
+                         "tileid":73,
+                         "wangid":[0, 1, 0, 1, 0, 0, 0, 0]
+                        }, 
+                        {
+                         "tileid":116,
+                         "wangid":[0, 0, 0, 1, 0, 0, 0, 0]
+                        }, 
+                        {
+                         "tileid":117,
+                         "wangid":[0, 0, 0, 1, 0, 1, 0, 0]
+                        }, 
+                        {
+                         "tileid":118,
+                         "wangid":[0, 0, 0, 0, 0, 1, 0, 0]
+                        }, 
+                        {
+                         "tileid":119,
+                         "wangid":[0, 0, 0, 1, 0, 0, 0, 0]
+                        }, 
+                        {
+                         "tileid":120,
+                         "wangid":[0, 0, 0, 1, 0, 1, 0, 0]
+                        }, 
+                        {
+                         "tileid":121,
+                         "wangid":[0, 0, 0, 0, 0, 1, 0, 0]
+                        }, 
+                        {
+                         "tileid":132,
+                         "wangid":[0, 1, 0, 1, 0, 0, 0, 0]
+                        }, 
+                        {
+                         "tileid":133,
+                         "wangid":[0, 1, 0, 1, 0, 1, 0, 1]
+                        }, 
+                        {
+                         "tileid":134,
+                         "wangid":[0, 0, 0, 0, 0, 1, 0, 1]
+                        }, 
+                        {
+                         "tileid":135,
+                         "wangid":[0, 1, 0, 1, 0, 0, 0, 0]
+                        }, 
+                        {
+                         "tileid":136,
+                         "wangid":[0, 1, 0, 1, 0, 1, 0, 1]
+                        }, 
+                        {
+                         "tileid":137,
+                         "wangid":[0, 0, 0, 0, 0, 1, 0, 1]
+                        }, 
+                        {
+                         "tileid":138,
+                         "wangid":[0, 0, 0, 1, 0, 0, 0, 0]
+                        }, 
+                        {
+                         "tileid":139,
+                         "wangid":[0, 0, 0, 1, 0, 1, 0, 0]
+                        }, 
+                        {
+                         "tileid":140,
+                         "wangid":[0, 0, 0, 0, 0, 1, 0, 0]
+                        }, 
+                        {
+                         "tileid":149,
+                         "wangid":[0, 1, 0, 0, 0, 0, 0, 1]
+                        }, 
+                        {
+                         "tileid":151,
+                         "wangid":[0, 1, 0, 0, 0, 0, 0, 0]
+                        }, 
+                        {
+                         "tileid":152,
+                         "wangid":[0, 1, 0, 0, 0, 0, 0, 1]
+                        }, 
+                        {
+                         "tileid":153,
+                         "wangid":[0, 0, 0, 0, 0, 0, 0, 1]
+                        }, 
+                        {
+                         "tileid":154,
+                         "wangid":[0, 1, 0, 1, 0, 0, 0, 0]
+                        }, 
+                        {
+                         "tileid":155,
+                         "wangid":[0, 1, 0, 1, 0, 1, 0, 1]
+                        }, 
+                        {
+                         "tileid":156,
+                         "wangid":[0, 0, 0, 0, 0, 1, 0, 1]
+                        }, 
+                        {
+                         "tileid":164,
+                         "wangid":[0, 1, 0, 1, 0, 1, 0, 0]
+                        }, 
+                        {
+                         "tileid":165,
+                         "wangid":[0, 0, 0, 1, 0, 1, 0, 1]
+                        }, 
+                        {
+                         "tileid":166,
+                         "wangid":[0, 1, 0, 1, 0, 1, 0, 0]
+                        }, 
+                        {
+                         "tileid":167,
+                         "wangid":[0, 0, 0, 1, 0, 1, 0, 1]
+                        }, 
+                        {
+                         "tileid":168,
+                         "wangid":[0, 1, 0, 1, 0, 1, 0, 0]
+                        }, 
+                        {
+                         "tileid":169,
+                         "wangid":[0, 0, 0, 1, 0, 1, 0, 1]
+                        }, 
+                        {
+                         "tileid":170,
+                         "wangid":[0, 1, 0, 0, 0, 0, 0, 0]
+                        }, 
+                        {
+                         "tileid":171,
+                         "wangid":[0, 1, 0, 0, 0, 0, 0, 1]
+                        }, 
+                        {
+                         "tileid":172,
+                         "wangid":[0, 0, 0, 0, 0, 0, 0, 1]
+                        }, 
+                        {
+                         "tileid":180,
+                         "wangid":[0, 1, 0, 1, 0, 0, 0, 1]
+                        }, 
+                        {
+                         "tileid":181,
+                         "wangid":[0, 1, 0, 0, 0, 1, 0, 1]
+                        }, 
+                        {
+                         "tileid":182,
+                         "wangid":[0, 1, 0, 1, 0, 0, 0, 1]
+                        }, 
+                        {
+                         "tileid":183,
+                         "wangid":[0, 1, 0, 0, 0, 1, 0, 1]
+                        }, 
+                        {
+                         "tileid":184,
+                         "wangid":[0, 1, 0, 1, 0, 0, 0, 1]
+                        }, 
+                        {
+                         "tileid":185,
+                         "wangid":[0, 1, 0, 0, 0, 1, 0, 1]
+                        }, 
+                        {
+                         "tileid":196,
+                         "wangid":[0, 1, 0, 1, 0, 1, 0, 1]
+                        }]
+                }]
         }, 
         {
          "columns":16,
@@ -1217,63 +1216,71 @@
          "margin":0,
          "name":"coldwatergrass",
          "spacing":0,
-         "terrains":[
-                {
-                 "name":"New Terrain",
-                 "tile":16
-                }],
          "tilecount":30,
          "tileheight":32,
-         "tiles":[
+         "tilewidth":32,
+         "wangsets":[
                 {
-                 "id":1,
-                 "terrain":[0, 0, 0, -1]
-                }, 
-                {
-                 "id":2,
-                 "terrain":[0, 0, -1, 0]
-                }, 
-                {
-                 "id":6,
-                 "terrain":[0, -1, 0, 0]
-                }, 
-                {
-                 "id":7,
-                 "terrain":[-1, 0, 0, 0]
-                }, 
-                {
-                 "id":10,
-                 "terrain":[-1, -1, -1, 0]
-                }, 
-                {
-                 "id":11,
-                 "terrain":[-1, -1, 0, 0]
-                }, 
-                {
-                 "id":12,
-                 "terrain":[-1, -1, 0, -1]
-                }, 
-                {
-                 "id":15,
-                 "terrain":[-1, 0, -1, 0]
-                }, 
-                {
-                 "id":17,
-                 "terrain":[0, -1, 0, -1]
-                }, 
-                {
-                 "id":20,
-                 "terrain":[-1, 0, -1, -1]
-                }, 
-                {
-                 "id":21,
-                 "terrain":[0, 0, -1, -1]
-                }, 
-                {
-                 "id":22,
-                 "terrain":[0, -1, -1, -1]
-                }],
-         "tilewidth":32
+                 "colors":[
+                        {
+                         "color":"#ff0000",
+                         "name":"New Terrain",
+                         "probability":1,
+                         "tile":16
+                        }],
+                 "name":"Terrains",
+                 "tile":-1,
+                 "type":"corner",
+                 "wangtiles":[
+                        {
+                         "tileid":1,
+                         "wangid":[0, 1, 0, 0, 0, 1, 0, 1]
+                        }, 
+                        {
+                         "tileid":2,
+                         "wangid":[0, 1, 0, 1, 0, 0, 0, 1]
+                        }, 
+                        {
+                         "tileid":6,
+                         "wangid":[0, 0, 0, 1, 0, 1, 0, 1]
+                        }, 
+                        {
+                         "tileid":7,
+                         "wangid":[0, 1, 0, 1, 0, 1, 0, 0]
+                        }, 
+                        {
+                         "tileid":10,
+                         "wangid":[0, 0, 0, 1, 0, 0, 0, 0]
+                        }, 
+                        {
+                         "tileid":11,
+                         "wangid":[0, 0, 0, 1, 0, 1, 0, 0]
+                        }, 
+                        {
+                         "tileid":12,
+                         "wangid":[0, 0, 0, 0, 0, 1, 0, 0]
+                        }, 
+                        {
+                         "tileid":15,
+                         "wangid":[0, 1, 0, 1, 0, 0, 0, 0]
+                        }, 
+                        {
+                         "tileid":17,
+                         "wangid":[0, 0, 0, 0, 0, 1, 0, 1]
+                        }, 
+                        {
+                         "tileid":20,
+                         "wangid":[0, 1, 0, 0, 0, 0, 0, 0]
+                        }, 
+                        {
+                         "tileid":21,
+                         "wangid":[0, 1, 0, 0, 0, 0, 0, 1]
+                        }, 
+                        {
+                         "tileid":22,
+                         "wangid":[0, 0, 0, 0, 0, 0, 0, 1]
+                        }]
+                }]
         }, 
         {
          "columns":5,
@@ -1459,6 +1466,6 @@
         }],
  "tilewidth":32,
  "type":"map",
- "version":1.4,
+ "version":"1.6",
  "width":120
 }
